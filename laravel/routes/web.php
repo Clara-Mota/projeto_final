@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\EventController;
+
+Route::get('/', [EventController::class, 'index']);
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/cadastropet', function () {
+    return view('cadastropet');
+});
+
+Route::get('/cadastroprofissional', function () {
+    return view('cadastroprofissional');
+});
+
+Route::get('/menu', function () {
+    return view('menu');
 });

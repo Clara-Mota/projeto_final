@@ -19,8 +19,9 @@
     </head>
     <body>
         @yield('content')
+
         <footer>
-            <p> Petshop &copy; 2020</p>
+            Pet Shop &copy 2022
         </footer>
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     </body>

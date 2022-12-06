@@ -1,0 +1,27 @@
+body, html{
+    height: 50%;
+  }
+body{
+    font-family: Vazirmatn;
+    background-color: #FF0676;
+    color: aliceblue;
+
+}
+
+header{
+    text-align: center;
+    background-color: #FFEE0C;
+    color: black;
+
+}
+#form{
+    padding-top: 200px;
+    padding-left: 120px;
+    width: 100%;
+
+}
+
+#logo{
+    background-color: #FFEE0C;
+    width: 100%;
+}
