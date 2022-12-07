@@ -16,19 +16,20 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
+Route::get('/cadastros/cadastroprofissional', [EventController::class, 'cadastroprofissional']);
+Route::get('/cadastros/cadastropet', [EventController::class, 'cadastropet']);
+Route::get('/cadastros/agendamento', [EventController::class, 'agendamento']);
+Route::post('/cadastros',[EventController::class, 'store']);
+
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/cadastropet', function () {
-    return view('cadastropet');
-});
-
-Route::get('/cadastroprofissional', function () {
-    return view('cadastroprofissional');
-});
-
 Route::get('/menu', function () {
     return view('menu');
+});
+
+Route::get('/agenda', function () {
+    return view('agenda');
 });

@@ -12,7 +12,7 @@
         <h2>Pet</h2>
     </div>
     <div class="col-md-6">
-        <input type="text" class="form-control w-30" id="nome_tutor" placeholder="Nome" required>
+        <input type="text" class="form-control" id="nome_tutor" placeholder="Nome" required>
     </div>
     <div class="col-md-6">
         <input type="text" class="form-control" id="nome_pet" placeholder="Nome" required>
@@ -37,7 +37,7 @@
         <br/>
         <input type="text" class="form-control" id="cartao" placeholder="Número cartão" required>
     </div>
-    <div class="col-12">
+    <div class="col-12" id="btn1">
         <br/>
         <button type="submit" class="btn btn-primary" id="btn_cadastropet">Cadastrar</button>
     </div>

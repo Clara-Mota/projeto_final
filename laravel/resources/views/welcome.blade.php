@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="row">
-  <div class="col-md-6 mw-100" id="logo">
+  <div class="col-md-6" id="logo">
       <img src="/img/logo_inicio.png">
     </div>
     <div class="col-md-6" id="form">

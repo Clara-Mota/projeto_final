@@ -1,5 +1,5 @@
 body, html{
-    height: 50%;
+    height: 100%;
   }
 body{
     font-family: Vazirmatn;
@@ -23,5 +23,20 @@ header{
 
 #logo{
     background-color: #FFEE0C;
-    width: 100%;
+    width: 50px;
+    
+}
+
+#btn_menu2{
+    background-color: #FF0676;
+
+}
+#btn_menu1{
+    background-color: #FFEE0C;
+
+}
+
+button{
+
+    background-color: #FFEE0C;
 }
