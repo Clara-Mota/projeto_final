@@ -5,7 +5,7 @@
 @section('content')
 
 <header id=hd-cadastroprofissional><h1>Cadastro Profissional</h1></header>
-<form class="row g-5" action="/cadastros" method="POST" id="form_cadastroprofissional">
+<form class="row g-5" action="/cadastros" method="post" id="form_cadastroprofissional">
     @csrf
     <div class="col-md-6">
         <br/>
