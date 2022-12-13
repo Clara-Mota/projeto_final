@@ -10,9 +10,14 @@ class EventController extends Controller
 {
     public function index(){
 
-        $profissional = Profissional::all();
+        $profissionais = Profissional::all();
 
-        return view('menu',['profissional'=> $profissional]);
+        return view('agenda',['profissionais' => $profissionais]);
+
+    }
+
+    public function create(){
+            return view('profissionais.create');
 
     }
 
@@ -29,20 +34,6 @@ class EventController extends Controller
     public function agendamento() {
         return view('cadastros.agendamento');
 
-    }
-
-    public function store(Request $request){
-
-        $profissional = new Profissional;
-
-        $profissional->idprof = $request->idprof;
-        $profissional->nome_profissional = $request->nome_profissional;
-        $profissional->especializacao = $request->especializacao;
-        $profissional->tipo = $request->tipo;
-
-        $profissional->save();
-
-        return redirect('/menu');
     }
 
 }
