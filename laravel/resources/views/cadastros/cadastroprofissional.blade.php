@@ -5,30 +5,22 @@
 @section('content')
 
 <header id=hd-cadastroprofissional><h1>Cadastro Profissional</h1></header>
-<form class="row g-5" action="/cadastros" method="post" id="form_cadastroprofissional">
-    @csrf
-    <div class="col-md-6">
-        <br/>
-        <input type="text" class="form-control" id="nome_profissional" placeholder="Nome" required>
-    </div>
-    <div class="col-md-6">
-        <br/>
-        <input type="text" class="form-control" id="tipo" placeholder="Função" required>
-    </div>
-    <div class="col-md-6">
-        <br/>
-        <input type="text" class="form-control" id="especializacao" placeholder="Especializaçao" required>
-    </div>
-    <div class="col-md-6">
-        <br/>
-        <input type="text" class="form-control" id="idprof" placeholder="ID" required>
-    </div>
-    <div class="col-12">
-        <br/>
-        <button type="submit" class="btn btn-primary" id="btn_cadastropet">Cadastrar</button>
-    </div>
-</form>
-
+<div id="profissional-creat-container" class="col-md-6 offset-md-3">
+    <form action="/cadastros" method="POST">
+        @csrf
+        <div class="form-group">
+            <br/>
+            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="especializacao" id="especializacao" placeholder="Especialização" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF" required>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Cadastrar">
+    </form>
+</div>
 @endsection
 
 

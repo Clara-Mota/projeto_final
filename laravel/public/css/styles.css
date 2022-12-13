@@ -1,30 +1,46 @@
-body, html{
-    height: 100%;
-  }
+/*General*/
+*{
+    font-family: 'Vazirmatn';
+}
 body{
-    font-family: Vazirmatn;
-    background-color: #FF0676;
     color: aliceblue;
+    background-color: #FF0676;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
 
 }
 
 header{
     text-align: center;
     background-color: #FFEE0C;
+    border-bottom: 1px solid #ccc ;
     color: black;
 
+}
+
+.row{
+    margin: 0;
 }
 #form{
     padding-top: 200px;
     padding-left: 120px;
     width: 100%;
+    background-color: #FF0676;
 
 }
 
 #logo{
     background-color: #FFEE0C;
-    
-    
+    min-height: 84vh;
+    position: relative;
+      
+}
+
+#logo img{
+    width: 500px;
+    height:500px;
+    margin-left: 50px;
 }
 
 #btn_menu2{
@@ -36,7 +52,23 @@ header{
 
 }
 
-button{
+.btn btn-primary {
 
     background-color: #FFEE0C;
+}
+
+
+/*footer*/
+footer {
+    text-align: center;
+    background-color: #ED056D;
+    color: aliceblue;
+    padding: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    margin-bottom: 0;
 }

@@ -8,21 +8,16 @@ use App\Models\Profissional;
 
 class EventController extends Controller
 {
-    public function index(){
+    public function index() {
 
-        $profissionais = Profissional::all();
+        $professionals = Profissional::all();
 
-        return view('agenda',['profissionais' => $profissionais]);
-
-    }
-
-    public function create(){
-            return view('profissionais.create');
+        return view('agenda',['professionals' => $professionals]);
 
     }
 
-    public function cadastroprofissional() {
-        return view('cadastros.cadastroprofissional');
+    public function cadastroprofissional(){
+            return view('cadastros.cadastroprofissional');
 
     }
 
@@ -33,6 +28,20 @@ class EventController extends Controller
 
     public function agendamento() {
         return view('cadastros.agendamento');
+
+    }
+
+    public function store(Request $request){
+
+        $profissional = new Profissional;
+
+        $profissional->nome = $request->nome;
+        $profissional->especializacao = $request->especializacao;
+        $profissional->cpf = $request->cpf;
+
+        $profissional->save();
+
+        return redirect('/menu');
 
     }
 
